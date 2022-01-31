@@ -13,7 +13,7 @@ export default class State extends React.Component{
     {
         this.setState({
             name: 'Bruce',
-            count:this.state.count+1
+            count:this.state.count+1    
         })
     }
     render(){
