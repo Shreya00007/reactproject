@@ -1,14 +1,20 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Home from './Home';
+import Profile from './Profile';
+import Profiles from './Profiles';
+import State from './State';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/* <h1>JSX With React</h1> */}
+      { /* <p>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
+        </p> 
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -16,8 +22,23 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        {/*<h1>Props in React</h1>*/}
+        <Profiles text={{name:'peter'}} data="Profile Data"/>
+        <Profile text={{name:'peter'}} data="Profile Data"/>
+
+        <Home />
+        <Home/>
+        <State/>
       </header>
+      {
+        React.createElement(
+          'h1',
+          {className:'head-tag'},
+          'Hello JSX'
+
+        )
+      }
     </div>
   );
 }
