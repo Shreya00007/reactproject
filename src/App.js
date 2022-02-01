@@ -5,6 +5,11 @@ import Home from './Home';
 import Profile from './Profile';
 import Profiles from './Profiles';
 import State from './State';
+import Eventhandling from './Eventhandling';
+import Lifecycle from './Lifecycle';
+
+// import Hideshow from './Hideshow';
+
 
 function App() {
   return (
@@ -30,6 +35,8 @@ function App() {
         <Home />
         <Home/>
         <State/>
+        <Eventhandling />
+        <Lifecycle/>
       </header>
       {
         React.createElement(
