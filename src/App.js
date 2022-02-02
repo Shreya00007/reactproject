@@ -7,6 +7,9 @@ import Profiles from './Profiles';
 import State from './State';
 import Eventhandling from './Eventhandling';
 import Lifecycle from './Lifecycle';
+import Hooks from './Hooks';
+import HookEffect from './HookEffect';
+import form from './form';
 
 // import Hideshow from './Hideshow';
 
@@ -37,6 +40,9 @@ function App() {
         <State/>
         <Eventhandling />
         <Lifecycle/>
+        <Hooks/>
+        <HookEffect/>
+        <form/>
       </header>
       {
         React.createElement(
